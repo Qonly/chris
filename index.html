@@ -188,8 +188,9 @@
 <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
 <script src="https://assets.codepen.io/16327/MotionPathPlugin.min.js"></script>
 <script src="https://assets.codepen.io/16327/EasePack3.min.js"></script>
-<!-- 注意：不要包含Physics2DPlugin -->
+
   <script>
+    gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin, MotionPathPlugin);
     MorphSVGPlugin.convertToPath("polygon");
     var xmlns = "http://www.w3.org/2000/svg",
       xlinkns = "http://www.w3.org/1999/xlink",
@@ -422,6 +423,7 @@
     gsap.globalTimeline.timeScale(1.5);
   </script>
 </html>
+
 
 
 
